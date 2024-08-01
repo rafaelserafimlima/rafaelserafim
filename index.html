@@ -165,7 +165,7 @@
             <a href="#contato">Contato</a>
         </div>
     </header>
-    <section id="sobre">
+    <section id="sobre"> <!-- Criei as divisões com os nomes das tags para ficar mais suscinto, sem a necessidade de usar muitos ids e classes-->
         <div>
         <h1>Sobre Mim</h1>
             <p>Me chamo Rafael Serafim, tenho 19 anos, meu principal hobbie é jogar video-game e desenvolver modificações para jogos, principalmente o The Sims 4. Nele, eu crio desde móveis para o jogo até roupas para os personagens.
@@ -211,14 +211,14 @@
     <nav id="portfolio">
         <div>
             <h1>Portfólio</h1>
-            <a href="">Site 1</a>
-            <a href="">Site 2</a>
+            <a href="Portfolio/Rafael_Portfolio_1/Início_RafaelAtv_28_11_22.html">Site 1</a>
+            <a href="Portfolio/Rafael_Portfolio_2/RafaelAtv_Display_05_12_2022.html">Site 2</a>
             <p>Sites fictícios desenvolvidos no meu curso de Desenvolvimento de Softwares</p>
         </div>
     </nav>
     <article id="contato">
         <div>
-            <fieldset style="border: 2px solid black; background-color: rgb(9, 19, 75);">
+            <fieldset style="border: 2px solid black; background-color: rgb(9, 19, 75);"> <!-- CSS imbutido-->
                 <h1>Contato</h1>
                 
                 <form action="">
@@ -234,7 +234,7 @@
                     <br>
                     <textarea name="" id="" cols="25" rows="5" placeholder="Digite sua Mensagem"></textarea>
                     <br><br>
-                    <input type="submit" style="padding: 10px 15px; font-size: 15px; cursor: pointer; background-color: rgb(102, 140, 223); color: white;">
+                    <input type="submit" style="padding: 10px 15px; font-size: 15px; cursor: pointer; background-color: rgb(102, 140, 223); color: white;"> <!-- CSS imbutido-->
                 </form>
             </fieldset>
         </div>
@@ -242,19 +242,5 @@
     <footer>
         <p>&copy; Currículo Virtual - Fundamentos de Desenvolvimento Web</p>
     </footer>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-    
-                const targetElement = document.querySelector(this.getAttribute('href'));
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
